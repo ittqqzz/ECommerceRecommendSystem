@@ -59,9 +59,10 @@ OnlineRecommender
 
 分别执行 recommender 与 businessServer 的 package 命令，会对这两个项目分别打包
 
-![image-20191030140455319](./assets/image-20191030140455319.png)
-
-![image-20191030141303449](./assets/image-20191030141303449.png)
+<div align="center"> 
+<img src="./assets/image-20191030140455319.png" style="width: 300px; height: 450px"/> 
+<img src="./assets/image-20191030141303449.png" style="width: 300px; height: 450px"/> 
+</div>
 
 ```
 [INFO] ------------------------------------------------------------------------
@@ -82,8 +83,6 @@ OnlineRecommender
 [INFO] Final Memory: 24M/171M
 [INFO] ------------------------------------------------------------------------
 ```
-
-
 
 BusinessServe.war 部署到 tomcat 等 web 容器里面
 
