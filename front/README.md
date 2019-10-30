@@ -23,4 +23,4 @@ npm run serve
 npm run build
 ```
 
-通过使用 `del-cli` 以及 `cp-cli` 工具，在 build 之前，Vue 会**自动**将之前的 `dist` 目录以及后端 `business `模块里面的 `static` 目录清空，然后开始 `build`，`build` 结束后会将最新的产出文件复制到 `business` 模块里面的 `static` 目录里面
+通过使用 `del-cli` 以及 `cp-cli` 工具，在 `build` 之前，Vue 会**自动**将之前的 `dist` 目录以及后端 `business `模块里面的 `static` 目录清空，然后开始 `build`，`build` 结束后会将最新的产出文件复制到 `business` 模块里面的 `static` 目录里面

@@ -59,9 +59,9 @@ OnlineRecommender
 
 分别执行 recommender 与 businessServer 的 package 命令，会对这两个项目分别打包
 
-![image-20191030140455319](assets/image-20191030140455319.png)
+![image-20191030140455319](./assets/image-20191030140455319.png)
 
-![image-20191030141303449](assets/image-20191030141303449.png)
+![image-20191030141303449](./assets/image-20191030141303449.png)
 
 ```
 [INFO] ------------------------------------------------------------------------
