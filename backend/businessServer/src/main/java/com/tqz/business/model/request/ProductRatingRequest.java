@@ -31,7 +31,8 @@ public class ProductRatingRequest {
     }
 
     public Double getScore() {
-        return Double.parseDouble(String.format("%.2f", score / 2D));
+//        return Double.parseDouble(String.format("%.2f", score / 2D));
+        return Double.parseDouble(String.format("%.2f", score));
     }
 
     public void setScore(Double score) {

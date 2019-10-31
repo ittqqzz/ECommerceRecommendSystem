@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.apache.log4j.Logger;
+import sun.applet.Main;
 
 import java.util.List;
 
@@ -104,12 +105,14 @@ public class ProductRestApi {
     @RequestMapping(value = "/search", produces = "application/json", method = RequestMethod.GET)
     @ResponseBody
     public Model getSearchProducts(@RequestParam("query") String query, Model model) {
+        // TODO query 编码问题可能会导致 search 失败
+        List<Product> products = null;
         try {
-            query = new String(query.getBytes("ISO-8859-1"), "UTF-8");
-        } catch (java.io.UnsupportedEncodingException e) {
+            products = productService.findByProductName(query);
+        } catch (Exception e) {
             e.printStackTrace();
+            System.err.println("==== search异常 ====");
         }
-        List<Product> products = productService.findByProductName(query);
         model.addAttribute("success", true);
         model.addAttribute("products", products);
         return model;
@@ -128,7 +131,7 @@ public class ProductRestApi {
 
             // 之前采用的是 flume 采集日志文件发送到 kafka，改为直接发送
             try {
-                // 这里的分数被除以了 2，防止分数太大
+
                 KafkaLogProducer.produceLog(user.getUserId() + "|" + id + "|" + request.getScore() + "|" + System.currentTimeMillis() / 1000);
             } catch (Exception e) {
                 System.err.println(" ======  kafka 消息投递异常  ====== ");

@@ -21,10 +21,10 @@ export default class Home extends Vue {
     public colors: any = ['#99A9BF', '#F7BA2A', '#FF9900']
 
     public created() {
-        this.getRecommendData('/rest/product/stream', 0)
-        this.getRecommendData('/rest/product/hot', 1)
-        this.getRecommendData('/rest/product/rate', 2)
-        this.getRecommendData('/rest/product/offline', 3)
+        this.getRecommendData('/business/rest/product/stream', 0)
+        this.getRecommendData('/business/rest/product/hot', 1)
+        this.getRecommendData('/business/rest/product/rate', 2)
+        this.getRecommendData('/business/rest/product/offline', 3)
     }
 
     public getRecommendData(url: string, index: number) {
@@ -99,7 +99,7 @@ export default class Home extends Vue {
         // ?score=8&username=abc
         console.log('收到评分数据,productId: ' + productId + " rate: " + rate)
         let user = localStorage.getItem('user')
-        await this.axios.get('/rest/product/rate/' + productId, {
+        await this.axios.get('/business/rest/product/rate/' + productId, {
             params: {
                 score: rate,
                 username: user

@@ -45,13 +45,13 @@ export default class Detail extends Vue {
             background: 'rgba(0, 0, 0, 0.7)'
         });
         try {
-            let res1 = await this.axios.get('/rest/product/info/' + productId)
+            let res1 = await this.axios.get('/business/rest/product/info/' + productId)
             this.info = res1.data.product
 
-            let res2 = await this.axios.get('/rest/product/itemcf/' + productId)
+            let res2 = await this.axios.get('/business/rest/product/itemcf/' + productId)
             this.itemcf = res2.data.products
 
-            let res3 = await this.axios.get('/rest/product/contentbased/' + productId)
+            let res3 = await this.axios.get('/business/rest/product/contentbased/' + productId)
             this.contentbased = res3.data.products
         } catch (err) {
             console.error('请求出现异常：' + err)
@@ -65,7 +65,7 @@ export default class Detail extends Vue {
     public async doRate(rate: number, productId: number) {
         console.log('收到评分数据,productId: ' + productId + " rate: " + rate)
         let user = localStorage.getItem('user')
-        await this.axios.get('/rest/product/rate/' + productId, {
+        await this.axios.get('/business/rest/product/rate/' + productId, {
             params: {
                 score: rate,
                 username: user

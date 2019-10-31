@@ -12,15 +12,13 @@ export default class Search extends Vue {
         console.log("进入watch")
         console.log(this.$route.query.searchInput)
 
-        this.getData('/rest/product/search', String(this.$route.query.searchInput))
+        this.getData('/business/rest/product/search', String(this.$route.query.searchInput))
     }
 
     public created() {
-        // /rest/product/search?query=PNY
         console.log("进入create")
-        //console.log(this.$route.query.searchInput)
 
-        this.getData('/rest/product/search', String(this.$route.query.searchInput))
+        this.getData('/business/rest/product/search', String(this.$route.query.searchInput))
     }
 
     public async getData(url: string, searchInput: string) {
@@ -52,12 +50,12 @@ export default class Search extends Vue {
     public async doRate(rate: number, productId: number) {
         console.log('收到评分数据,productId: ' + productId + " rate: " + rate)
         let user = localStorage.getItem('user')
-        await this.axios.get('/rest/product/rate/' + productId, {
+        await this.axios.get('/business/rest/product/rate/' + productId, {
             params: {
                 score: rate,
                 username: user
             }
         })
     }
-    
+
 }

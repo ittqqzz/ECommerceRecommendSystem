@@ -97,7 +97,8 @@ object OnlineRecommender {
       rdds =>
         rdds.foreach { // 然后遍历这些评分数据
           case (userId, productId, score, timestamp) =>
-            println("rating data coming ! >>>>>>>>>>>>>>>>>>")
+            println("<<<<<<<<<<<<<<<<<< rating data coming ! >>>>>>>>>>>>>>>>>>")
+            println("<<<<<<<<<<<<<<<<<<" + userId + "|" + productId + "|" + score + "|" + timestamp + ">>>>>>>>>>>>>>>>>>")
 
             // 核心算法流程
             // 1. 从redis里取出当前用户的最近评分，保存成一个数组 Array[(productId, score)]
