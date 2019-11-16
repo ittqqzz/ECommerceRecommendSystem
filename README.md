@@ -15,7 +15,7 @@
 1. 环境：Win 10、JDK-1.8、Scala-2.11、Spark-2.1
 2. IDE：IDEA
 3. 组件：Kafka、Redis、MongoDB
-4. 其他：
+4. 其他：Flink-1.7
 
 
 
