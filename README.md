@@ -1,6 +1,6 @@
 # ECommerceRecommendSystem
 
-# front
+# front [点击查看]( https://github.com/ittqqzz/ECommerceRecommendSystem/tree/master/front )
 
 前端源码
 
@@ -10,7 +10,7 @@ npm run serve
 npm run build
 ```
 
-# backend
+# backend [点击查看]( https://github.com/ittqqzz/ECommerceRecommendSystem/tree/master/backend )
 
 服务端源码
 
