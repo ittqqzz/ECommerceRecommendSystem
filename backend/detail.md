@@ -1,14 +1,14 @@
 # 前提
 
-目前所有的模块均在 Spark 环境中运行，所以代码的开始需要加载 Spark 环境
+目前所有的模块均在 Spark 环境中运行，所以全部模块代码的开始需要加载 Spark 环境
 
 ```java
 // setMaster(“local[2]”)括号里的参数”local[2]’字符串表示运行在本地模式下，并且启动2个工作线程。
-val spark = SparkSession.builder().config(new SparkConf().setAppName("流式计算")
+val spark = SparkSession.builder().config(new SparkConf().setAppName("模块名称")
                                           .setMaster("local[2]")).getOrCreate()
 
     
-// Seconds(1)表示每隔1秒钟就自动执行一次流计算
+// Seconds(5)表示每隔5秒钟就自动执行一次流计算
 val ssc = new StreamingContext(spark.sparkContext, Seconds(5))
 ```
 
