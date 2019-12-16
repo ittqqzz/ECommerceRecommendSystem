@@ -12,7 +12,7 @@
       </el-card>
     </div>
 
-    <h1>基于物品的相似推荐(itemCF)</h1>
+    <h1 title="基于物品的相似推荐(itemCF)">看过该商品的人还看了</h1>
     <div>
       <el-card v-for="item in itemcf" :key="item.productId * 10" class="card">
         <router-link :to="{path: '/detail', query: {productId: item.productId} }" class="a-name">
@@ -23,7 +23,7 @@
       </el-card>
     </div>
 
-    <h1>基于内容的相似推荐(contentCF)</h1>
+    <h1 title="基于内容的相似推荐(contentCF)">喜欢该商品的人也喜欢</h1>
     <div>
       <el-card v-for="item in contentbased" :key="item.productId / 10" class="card">
         <router-link :to="{path: '/detail', query: {productId: item.productId} }" class="a-name">
