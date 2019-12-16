@@ -1,7 +1,9 @@
 <template>
   <div class="header">
-    <img src="@/assets/logo.png" />
-    <div class="title">电商推荐系统</div>
+    <div class="site">
+      <img src="@/assets/logo.png" class="site-img"/>
+      <div class="title">Amazon Mall</div>
+    </div>
     <div class="search-container">
       <div class="search">
         <el-input type="text" v-model="searchInput" :clearable="true" placeholder="搜索商品" />
