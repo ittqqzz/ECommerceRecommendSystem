@@ -2,7 +2,7 @@
   <div class="header">
     <div class="site" v-on:click="goHome" title="回到首页">
       <img src="@/assets/logo.png" class="site-img" />
-      <div class="title">Amazon Mall</div>
+      <div class="title">Amazon ERS</div>
     </div>
     <div class="search-container">
       <div class="search">
