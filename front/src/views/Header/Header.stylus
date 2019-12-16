@@ -12,11 +12,16 @@
 
 .search {
    display: inline-block;
+   margin-right: 5px;
 }
 
 .site {
     display: inline;
     margin-left: 60px;
+}
+
+.site:hover {
+   cursor: pointer;
 }
 
 .title {
@@ -41,5 +46,18 @@
     float: right;
     position: absolute;   
     bottom: 5px; 
-    right: 60px; 
+    right: 70px;
+}
+
+.user {
+    display: inline;
+    float: right;
+    margin-right: 15px;    
+    position: absolute;   
+    bottom: 5px; 
+    right: 10px;
+}
+
+.user:hover {
+    cursor: pointer;
 }
