@@ -99,11 +99,20 @@ export default class Home extends Vue {
         // ?score=8&username=abc
         console.log('收到评分数据,productId: ' + productId + " rate: " + rate)
         let user = localStorage.getItem('user')
-        await this.axios.get('/business/rest/product/rate/' + productId, {
+        let res = await this.axios.get('/business/rest/product/rate/' + productId, {
             params: {
                 score: rate,
                 username: user
             }
         })
+        if (res.data.success == true) {
+            this.$alert('评分成功', '提示', {
+                confirmButtonText: '确定'
+            });
+        } else {
+            this.$alert('评分失败', '提示', {
+                confirmButtonText: '确定'
+            });
+        }
     }
 }

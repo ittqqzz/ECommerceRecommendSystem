@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import * as Element from 'element-ui'
+import { MessageBox } from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -24,6 +25,12 @@ router.beforeEach((to, from, next) => {
     next()
   } else {
     // 否则将用户转发到登录页
+    MessageBox({
+      title: '提示',
+      message: '请先登录',
+      type: 'warning',
+      showConfirmButton: true
+    })
     next({
       path: '/'
     })

@@ -5,6 +5,8 @@ export default class Header extends Vue {
 
     public searchInput: string = ''
 
+    public loginStatue: boolean = true
+
     public doSearch() {
         // 跳转到搜索页面
         this.$router.push(

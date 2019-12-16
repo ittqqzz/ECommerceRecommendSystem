@@ -36,8 +36,8 @@ case class MongoConfig(uri: String, db: String)
 
 object DataLoader {
   // 定义数据文件路径
-  val PRODUCT_DATA_PATH = "E:\\BaiduYunDownload\\尚硅谷大数据项目之电商推荐系统\\3.代码\\ECommerceRecommendSystem\\recommender\\DataLoader\\src\\main\\resources\\products.csv"
-  val RATING_DATA_PATH = "E:\\BaiduYunDownload\\尚硅谷大数据项目之电商推荐系统\\3.代码\\ECommerceRecommendSystem\\recommender\\DataLoader\\src\\main\\resources\\ratings.csv"
+  val PRODUCT_DATA_PATH = "/usr/local/spark-2.1.1-bin-without-hadoop/myapp/products.csv"
+  val RATING_DATA_PATH = "/usr/local/spark-2.1.1-bin-without-hadoop/myapp/ratings.csv"
   // 定义mongodb中存储的表名
   val MONGODB_PRODUCT_COLLECTION = "Product"
   val MONGODB_RATING_COLLECTION = "Rating"
