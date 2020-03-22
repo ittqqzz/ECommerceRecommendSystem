@@ -1,3 +1,10 @@
+# 请注意
+
+为了方便大家直接运行代码，减少组件的安装，我开放了部分阿里云端口，**但是**经常有人攻击我的阿里云 redis 以及 mongodb，导致我的数据经常丢失，若你注册完，登录进入系统后看到了一片空白，请及时扫码联系我修复数据。
+
+<div align="center">
+    <img src="https://s1.ax1x.com/2020/03/22/857vq0.jpg" alt="857vq0.jpg" style="zoom:50%;" /></div>
+
 # ECommerceRecommendSystemIntroduction
 
 电商网站商品推荐系统采用前后端分离开发的方式，通过 JSON 交互数据。
