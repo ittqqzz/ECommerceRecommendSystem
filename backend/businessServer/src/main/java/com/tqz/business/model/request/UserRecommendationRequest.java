@@ -1,6 +1,7 @@
 package com.tqz.business.model.request;
 
 public class UserRecommendationRequest {
+
     private int userId;
 
     private int sum;

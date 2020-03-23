@@ -1,6 +1,7 @@
 package com.tqz.business.model.request;
 
 public class ProductRecommendationRequest {
+
     private int productId;
 
     private int sum;

@@ -1,19 +1,22 @@
 package com.tqz.business.service;
 
+import com.tqz.business.utils.PropertiesFileUtils;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class KafkaLogProducer {
-    private static String HOST = "120.79.241.167:9092";
-    private static String TOPIC = "recommender";
 
-//    public static void main(String[] args) {
-//        produceLog("123456|4316|3.6|13524685");
-//    }
+    private static String HOST = PropertiesFileUtils.KAFKA_HOST + ":" + PropertiesFileUtils.KAFKA_PORT;
+
+    private static String TOPIC = PropertiesFileUtils.KAFKA_TOPIC;
 
     public static void produceLog(String msg) {
         // 配置生产者参数，以下三个是必须的
