@@ -192,6 +192,10 @@ public class ProductRestApi {
         List<Recommendation> recommendations = null;
         try {
             user = userService.findByUsername(username);
+            // 主动设置一个 admin 账号，避免offine数据获取失败
+            if (user != null && user.getUsername().equals("admin")) {
+                user.setUid(50130);
+            }
             recommendations = recommenderService.getCollaborativeFilteringRecommendations(new UserRecommendationRequest(user.getUserId(), num));
             model.addAttribute("success", true);
             model.addAttribute("products", productService.getRecommendProducts(recommendations));

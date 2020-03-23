@@ -89,7 +89,7 @@
     </dependencies>
 
     <build>
-        <finalName>BusinessServer</finalName>
+        <finalName>business</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>

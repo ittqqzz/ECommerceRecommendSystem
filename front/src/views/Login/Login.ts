@@ -25,8 +25,8 @@ export default class Login extends Vue {
   public isRegisterStatus: boolean = false
 
   public form: any = {
-    'username': '',
-    'password': ''
+    'username': 'admin',
+    'password': '123456'
   }
 
   public async created() {

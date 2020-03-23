@@ -64,7 +64,7 @@ public class User {
     }
 
     public void setUid(int uid) {
-        this.userId = userId;
+        this.userId = uid;
     }
 
     public String get_id() {
