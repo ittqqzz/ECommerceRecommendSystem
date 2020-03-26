@@ -11,16 +11,7 @@
 
 在线浏览：[liruiha.com:8080/business/]( http://liruiha.com:8080/business/ )
 
-视频简介：
-
-<video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
-      <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
-      <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
-      <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg">
-      <p>Your user agent does not support the HTML5 Video element.</p>
-    </video>
-
-[点击打开视频演示](https://www.bilibili.com/video/bv1M7411m7e6)
+视频简介：[点击打开视频演示](https://www.bilibili.com/video/bv1M7411m7e6)
 
 ![M5npj0.png](https://s2.ax1x.com/2019/11/21/M5npj0.png)
 
