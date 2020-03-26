@@ -1,4 +1,4 @@
-# 请注意
+# FBI WARNING
 
 为了方便大家直接运行代码，减少组件的安装，我开放了部分阿里云端口，**但是**经常有人攻击我的阿里云 redis 以及 mongodb，导致我的数据经常丢失，若你注册完，登录进入系统后看到了一片空白，请及时扫码联系我修复数据。
 
@@ -9,7 +9,20 @@
 
 电商网站商品推荐系统采用前后端分离开发的方式，通过 JSON 交互数据。
 
-在线浏览：[liruiha.com/business/]( http://liruiha.com:8080/business/ )
+在线浏览：[liruiha.com:8080/business/]( http://liruiha.com:8080/business/ )
+
+视频简介：
+
+<iframe 
+        height="720" 
+        width="1070"
+        src="//player.bilibili.com/player.html?aid=99071962&bvid=BV1M7411m7e6&cid=169120596&page=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true"> 
+</iframe>
 
 ![M5npj0.png](https://s2.ax1x.com/2019/11/21/M5npj0.png)
 
