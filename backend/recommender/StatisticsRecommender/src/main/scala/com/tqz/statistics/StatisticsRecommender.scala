@@ -21,7 +21,7 @@ object StatisticsRecommender {
   def main(args: Array[String]): Unit = {
     val config = Map(
       "spark.cores" -> "local[1]",
-      "mongo.uri" -> "mongodb://120.79.241.167:27017/recommender",
+      "mongo.uri" -> "mongodb://127.0.0.1:27017/recommender",
       "mongo.db" -> "recommender"
     )
     // 创建一个spark config
