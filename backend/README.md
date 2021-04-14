@@ -9,8 +9,8 @@
 1. Spark
 2. Spark SQL
 3. SparkMLlib
-4. Flink（尚未启用，2.0 版本开发即将启动）
-5. FlinkML（2.0 版本即将迁移到 Flink 上）
+4. ~~Flink（尚未启用，2.0 版本开发即将启动）~~
+5. ~~FlinkML（2.0 版本即将迁移到 Flink 上）~~
 6. MongoDB：存储文本数据
 7. Redis：保存用户的评分数据，为实时处理提供高速的数据传输，数据格式为每一个 userId 里面保存多个 productId:rates，即
    1. userId:123456
@@ -132,3 +132,32 @@ BusinessServe.war 部署到 tomcat 等 web 容器里面
 简易的 Spring Web 后台，用 maven 打包后直接跑起来即可，注意打包的时候要将依赖也打进去。
 
 用户的评分数据除了通过 Kafka 发送到实时推荐系统，还要记录到 Redis 里面，这样就可以获取同一个用户最近几次的全部评分数据了，使实时计算更加精准。
+
+三、环境搭建简介
+
+本项目是一个学习型的，所以环境很简单，搭建起来也很容易。
+
+首先安装必要的中间件：Redis、Kafka、MongoDB，安装全部走单机版默认配置，百度一下就能安装好
+
+然后是安装Scala，我的Scala版本如下：
+
+```
+~ scala
+Welcome to Scala 2.11.12 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_121).
+Type in expressions for evaluation. Or try :help.
+
+```
+
+Java 版本是 JDK 1.8
+
+和 IDEA 搭配的 Scala 插件版本：scala-intellij-bin-2019.2.15.zip
+
+然后就是你的 Maven 配置，首先我的版本号是 3.5，其次使用国内的镜像源，这个项目严重依赖 Maven，请务必配置好Maven，项目是使用 Maven 父子工程搭建的，请仔细检查 pom.xml 文件里面的依赖是否都正确加载
+
+然后是Tomcat，我的版本是 8.5.23，IDEA 里面主要配置如下图：
+
+[![ccObyq.png](https://z3.ax1x.com/2021/04/14/ccObyq.png)](https://imgtu.com/i/ccObyq)
+
+最后一点，配置好组件之后还可能要修改一下代码里面的连接参数，因为连接配置信息是硬编码的，需要检查一下
+
+环境配置其实很简单的，各个组件、插件，按照单机版的默认配置安装好，最后让各个组件能连接上系统即可
