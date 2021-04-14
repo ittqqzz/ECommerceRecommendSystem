@@ -2,7 +2,7 @@
 
 电商网站商品推荐系统采用前后端分离开发的方式，通过 JSON 交互数据。
 
-在线浏览：[liruiha.com:8080/business/]( http://liruiha.com:8080/business/ )
+~~在线浏览：[liruiha.com:8080/business/]( http://liruiha.com:8080/business/ )~~
 
 视频简介：[点击打开视频演示](https://www.bilibili.com/video/bv1M7411m7e6)
 
@@ -25,7 +25,7 @@
 1. 环境：Win 10、JDK-1.8、Scala-2.11、Spark-2.1
 2. IDE：IDEA
 3. 组件：Kafka、Redis、MongoDB
-4. 其他：Flink-1.7（计划已关闭）
+4. ~~其他：Flink-1.7（计划已关闭）~~
 
 
 
