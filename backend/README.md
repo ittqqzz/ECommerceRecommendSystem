@@ -133,7 +133,7 @@ BusinessServe.war 部署到 tomcat 等 web 容器里面
 
 用户的评分数据除了通过 Kafka 发送到实时推荐系统，还要记录到 Redis 里面，这样就可以获取同一个用户最近几次的全部评分数据了，使实时计算更加精准。
 
-三、环境搭建简介
+## 三、Env  Configuration Introduce
 
 本项目是一个学习型的，所以环境很简单，搭建起来也很容易。
 
