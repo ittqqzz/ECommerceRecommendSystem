@@ -13,7 +13,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <spring.version>4.3.6.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <spring.data.jpa.version>1.11.0.RELEASE</spring.data.jpa.version>
         <jackson.version>2.8.6</jackson.version>
         <servlet.version>3.0.1</servlet.version>
