@@ -1,5 +1,19 @@
 # ECommerceRecommendSystemIntroduction
 
+想要获得作者帮助？+vx: **Yanicenini**
+
+作者将提供如下帮助：
+
+【基础指导】：作者将在业余时间远程指导部署
+
+【进阶指导】：获得作者一对一详细指导
+
+【高级指导】：获得作者准备的docker镜像，实现一键部署，一键上云，没有环境安装烦恼
+
+【尊享指导】：获得作者亲自部署演示以及万字论文模板指导
+
+***
+
 电商网站商品推荐系统采用前后端分离开发的方式，通过 JSON 交互数据。
 
 ~~在线浏览：[liruiha.com:8080/business/]( http://liruiha.com:8080/business/ )~~
