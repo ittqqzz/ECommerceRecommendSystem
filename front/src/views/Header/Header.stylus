@@ -1,0 +1,63 @@
+.header {
+    width: 100%;
+    margin: 0px auto;
+    border: 1px solid #ebebeb;
+    margin-bottom: 24px;
+    position: sticky;
+    position: -webkit-sticky;   
+    top: 0px;   
+    background-color: #fff;             
+    z-index: 3;       
+}
+
+.search {
+   display: inline-block;
+   margin-right: 5px;
+}
+
+.site {
+    display: inline;
+    margin-left: 60px;
+}
+
+.site:hover {
+   cursor: pointer;
+}
+
+.title {
+    line-height: 48px;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 1.5em;
+    color: #493f35;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: .008em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.search-button {
+    display: inline-block;
+}
+
+.search-container {
+    display: inline;
+    float: right;
+    position: absolute;   
+    bottom: 5px; 
+    right: 70px;
+}
+
+.user {
+    display: inline;
+    float: right;
+    margin-right: 15px;    
+    position: absolute;   
+    bottom: 5px; 
+    right: 10px;
+}
+
+.user:hover {
+    cursor: pointer;
+}
