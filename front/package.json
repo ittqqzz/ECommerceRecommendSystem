@@ -9,7 +9,7 @@
     "postbuild": "cp-cli ./dist/ ../backend/businessServer/src/main/webapp/static"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^1.6.8",
     "core-js": "^3.3.2",
     "cp-cli": "^2.0.0",
     "del-cli": "^3.0.0",
