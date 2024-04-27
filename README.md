@@ -54,9 +54,7 @@ VMWare部署完成之后的效果如本文件目录内  vmware_video.mp4  所示
 2. 开发工具：Intellij-IDEA-2019.3.3、VSCode最新版
 3. 组件：Kafka-0.10.2.1、Redis-2.9、MongoDB-3.6、Zookeeper-3.4.11
 
-
-
-后面每一个工程内部都有 readme 介绍项目结构以及如何开发，请留意，谢谢。
+后面每一个工程内部都有 readme 介绍项目结构以及如何开发部署，记得浏览哦。
 
 
 
