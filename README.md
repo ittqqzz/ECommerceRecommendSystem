@@ -1,10 +1,12 @@
 # ECommerceRecommendSystemIntroduction
 
+## 联系作者
+
 想要获得作者帮助？+vx: **Yanicenini** 
 
 作者将提供如下帮助：
 
-【基础指导】：作者将在业余时间远程指导你来部署**（免费）**
+【基础指导】：作者将在业余时间远程指导你来部署 **（免费）**
 
 【进阶指导】：获得作者一对一详细指导
 
@@ -18,11 +20,17 @@ VMWare 镜像截图
 
 [![pkiMlbn.png](https://s21.ax1x.com/2024/04/27/pkiMlbn.png)](https://imgse.com/i/pkiMlbn)
 
+[![pkiQaJf.png](https://s21.ax1x.com/2024/04/27/pkiQaJf.png)](https://imgse.com/i/pkiQaJf)
+
 VMWare信息：VMware® Workstation 14 Pro  版本号 14.1.1 build-7528167
 
 VMWare部署完成之后的效果如本文件目录内  vmware_video.mp4  所示
 
-视频简介：[点击打开视频演示](https://www.bilibili.com/video/bv1M7411m7e6)
+
+
+## 系统运行效果演示
+
+**视频简介**：[点击打开视频演示](https://www.bilibili.com/video/bv1M7411m7e6)
 
 ![M5npj0.png](https://s2.ax1x.com/2019/11/21/M5npj0.png)
 
@@ -42,9 +50,9 @@ VMWare部署完成之后的效果如本文件目录内  vmware_video.mp4  所示
 
 **开发工具**
 
-1. 环境：Win 10、JDK-1.8、Scala-2.11
-2. IDE：IDEA
-3. 组件：Kafka、Redis、MongoDB、Zookeeper
+1. 环境：Windows 10、JDK-1.8、Scala-2.11.12
+2. 开发工具：Intellij-IDEA-2.19.3.3、VSCode最新版
+3. 组件：Kafka-0.10.2.1、Redis-2.9、MongoDB-3.6、Zookeeper-3.4.11
 
 
 
