@@ -1,8 +1,8 @@
-# 后端简介
+# 后端各个工程简介
 
-## 一、recommend
+## 一、recommender
 
-独立运行的推荐源代码，分为实时推荐以及离线推荐，综合利用了协同过滤算法以及基于内容的推荐方法来提供混合推荐  
+独立运行的推荐系统源代码，分为实时推荐以及离线推荐，综合利用了协同过滤算法以及基于内容的推荐方法来提供混合推荐  
 
 ### 技术栈简介
 
@@ -23,6 +23,8 @@
 离线计算均为批处理任务，使用 SparkSQL 与 SparkMLib 辅助处理
 
 实时计算需要 SparkStreaming 辅助处理
+
+交互流程如下图
 
 ![总览](./assets/recommendsystempng.png)
 
@@ -63,6 +65,8 @@ ALS：通过观察到的所有用户给产品的打分，来推断每个用户�
 
 TF-IDF：提取最能代表文本的关键词
 
+**如果您想了解更多关于算法部分的信息，请加vx私聊我**
+
 ### 启动
 
 运行前需要安装组件
@@ -72,11 +76,11 @@ TF-IDF：提取最能代表文本的关键词
 3. Redis
 4. MongoDB
 
-需要自己翻阅源码将一些硬编码的 IP 地址替换掉，换成 127.0.0.1
+**需要你自己翻阅源码（可利用全局搜索工具）将一些硬编码的 IP 地址替换掉，比如把一些192.或者10.开头的IP地址换成 127.0.0.1**
 
 #### 启动 business
 
-在 IDEA 里面直接将 business 模块部署到 Tomcat 或者使用 maven 的 tomcat 插件运行即可，最后访问 http://localhost:8088/business
+在 IDEA 里面直接将 businessServer 模块部署到 Tomcat 或者使用 maven 的 tomcat 插件运行即可，最后访问 http://localhost:8088/business
 
 #### 启动 recommender
 
@@ -125,9 +129,9 @@ OnlineRecommender
 
 BusinessServe.war 部署到 tomcat 等 web 容器里面
 
-## 二、business
+## 二、businessServer
 
-简易的 Spring Web 后台，用 maven 打包后直接跑起来即可，注意打包的时候要将依赖也打进去。
+简易的 Spring Web 后台，用 maven 打包后直接跑起来即可，注意打包的时候要将依赖也打进去，打包方式上面刚刚有介绍过。
 
 用户的评分数据除了通过 Kafka 发送到实时推荐系统，还要记录到 Redis 里面，这样就可以获取同一个用户最近几次的全部评分数据了，使实时计算更加精准。
 
@@ -148,7 +152,7 @@ Type in expressions for evaluation. Or try :help.
 
 Java 版本是 JDK 1.8
 
-和 IDEA 搭配的 Scala 插件版本：scala-intellij-bin-2019.2.15.zip
+和 IDEA 搭配的 Scala 插件版本：scala-intellij-bin-2019.2.15.zip  （这个插件比较难下，我放在本仓库里面你可以直接用）
 
 然后就是你的 Maven 配置，首先我的版本号是 3.5，其次使用国内的镜像源，这个项目严重依赖 Maven，请务必配置好Maven，项目是使用 Maven 父子工程搭建的，请仔细检查 pom.xml 文件里面的依赖是否都正确加载
 
@@ -156,6 +160,8 @@ Java 版本是 JDK 1.8
 
 [![ccObyq.png](https://z3.ax1x.com/2021/04/14/ccObyq.png)](https://imgtu.com/i/ccObyq)
 
-最后一点，配置好组件之后还可能要修改一下代码里面的连接参数，因为连接配置信息是硬编码的，需要检查一下，比如mongodb的host信息。
+最后一点，配置好组件之后还可能要修改一下代码里面的连接参数，因为连接配置信息是**硬编码**的，需要检查一下，比如mongodb的host信息。
 
-环境配置其实很简单的，各个组件、插件，按照单机版的默认配置安装好，最后让各个组件能连接上系统即可，有问题就联系我吧。
+环境配置其实很简单的，各个组件、插件，按照单机版的默认配置安装好，最后让各个组件能连接上系统即可，有问题就联系我吧，vx放在项目首页readme里面。
+
+**我这里有全套可以直接运行的环境，如果你被项目部署折磨到了，不知道怎么运行，可以联系我，我发给你，打开就能直接用。**
